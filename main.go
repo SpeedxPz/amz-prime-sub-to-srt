@@ -32,7 +32,7 @@ type p struct {
 }
 
 func FormatNetflixDuration(d time.Duration) string {
-	return fmt.Sprintf("%02d:%02d:%02d,%03d\n",
+	return fmt.Sprintf("%02d:%02d:%02d,%03d",
 		int(d.Seconds()/3600),
 		int(d.Seconds()/60)%60,
 		int(d.Seconds())%60,
